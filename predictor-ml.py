@@ -7,7 +7,21 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
+'''
 
+Explanation
+__init__: Initializes the class with features, target, numeric, and categorical features. It also creates the model pipeline.
+_create_pipeline: Private method to create a preprocessing and model pipeline.
+load_data: Loads the dataset from a specified file path and displays the first few rows.
+preprocess: Splits the data into features (X) and target (y).
+train_test_split: Splits the data into training and testing sets.
+train: Trains the model on the training set.
+predict: Makes predictions using the test set.
+evaluate: Evaluates the model using mean absolute error, mean squared error, and root mean squared error.
+run: Executes the whole process in sequence.
+
+
+'''
 class HousePricePredictor:
     def __init__(self, features, target, numeric_features, categorical_features):
         self.features = features
