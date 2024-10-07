@@ -6,7 +6,7 @@ Replace 'house_prices.csv' with the path to your actual dataset.
 Adjust the features list based on the columns in your dataset.
 You can extend the model by trying different regression algorithms (e.g., RandomForestRegressor) and adding hyperparameter tuning.
 
-# usage  example
+# how to use implementation
 
 # Define the features, target, numeric, and categorical features
 features = ['Size', 'Bedrooms', 'Age', 'Location']
@@ -19,3 +19,5 @@ predictor = HousePricePredictor(features, target, numeric_features, categorical_
 
 # Run the entire prediction pipeline
 predictor.run('house_prices.csv')
+
+
